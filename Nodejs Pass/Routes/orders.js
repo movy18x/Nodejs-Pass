@@ -3,7 +3,7 @@ import { finalSchema, finalTotal } from "../orderSchema.js";
 const router = express.Router();
 
 let schema = {
-  order: finalSchema,
+  orders: finalSchema,
   total: finalTotal,
 };
 

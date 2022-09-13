@@ -32,7 +32,7 @@ orders.forEach((order) => {
     mainTotal += Number(oneItem[3]);
     array.push(itemSchema);
   }
-  finalTotal += mainTotal;
+  finalTotal += mainTotal - (mainTotal * (Number(info[1]) / 100));
 
   let schema = {
     customer: name,
